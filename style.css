@@ -1,0 +1,140 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* General reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: hsl(210, 60%, 98%);
+    color: hsl(224, 30%, 20%);
+}
+
+/* Main Container */
+.results-summary {
+    display: flex;
+    max-width: 500px;
+    background: white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Results Section */
+.results {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(
+        180deg,
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    );
+    color: white;
+    border-radius: 20px;
+}
+.results h2 {
+    margin-bottom: 1rem;
+}
+.score-circle {
+    background: hsl(241, 72%, 46%);
+    color: hsl(256, 72%, 96%);
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.of_100 {
+    font-size: 10px;
+    font-weight: lighter;
+    color: rgb(101, 101, 239);
+}
+.feedback {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Summary Section */
+.summary {
+    flex: 1;
+    padding: 2rem;
+}
+.summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.categories {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+.category {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.category.reaction {
+    background: hsl(0, 100%, 95%);
+    color: hsl(0, 100%, 67%);
+}
+.category.memory {
+    background: hsl(39, 100%, 95%);
+    color: hsl(39, 100%, 56%);
+}
+.category.verbal {
+    background: hsl(166, 100%, 95%);
+    color: hsl(166, 100%, 44%);
+}
+.category.visual {
+    background: hsl(234, 100%, 95%);
+    color: hsl(234, 85%, 45%);
+}
+.continue-btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: hsl(224, 30%, 20%);
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.continue-btn:hover {
+    background: hsl(224, 30%, 30%);
+} /* Responsive Design */
+@media (max-width: 375px) {
+    .results-summary {
+        flex-direction: column;
+        width: 300px;
+    }
+    .results {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
