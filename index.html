@@ -12,6 +12,9 @@
             href="./assets/images/favicon-32x32.png"
         />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
 
         <title>Frontend Mentor | Results summary component</title>
     </head>
@@ -36,17 +39,32 @@
                 <h2>Summary</h2>
                 <ul class="categories">
                     <li class="category reaction">
-                        <span>Reaction</span>
-                        <span class="score">80 / 100</span>
+                        <div class="category-info">
+                            <img src="./assets/images/icon-reaction.svg" alt="Reaction icon">
+                            <span>Reaction</span>
+                        </div>
+                        <span class="score"><strong>80</strong> / 100</span>
                     </li>
                     <li class="category memory">
-                        <span>Memory</span> <span class="score">92 / 100</span>
+                        <div class="category-info">
+                            <img src="./assets/images/icon-memory.svg" alt="Memory icon">
+                            <span>Memory</span>
+                        </div>
+                        <span class="score"><strong>92</strong> / 100</span>
                     </li>
                     <li class="category verbal">
-                        <span>Verbal</span> <span class="score">61 / 100</span>
+                        <div class="category-info">
+                            <img src="./assets/images/icon-verbal.svg" alt="Verbal icon">
+                            <span>Verbal</span>
+                        </div>
+                        <span class="score"><strong>61</strong> / 100</span>
                     </li>
                     <li class="category visual">
-                        <span>Visual</span> <span class="score">72 / 100</span>
+                        <div class="category-info">
+                            <img src="./assets/images/icon-visual.svg" alt="Visual icon">
+                            <span>Visual</span>
+                        </div>
+                        <span class="score"><strong>72</strong> / 100</span>
                     </li>
                 </ul>
                 <button class="continue-btn">Continue</button>
